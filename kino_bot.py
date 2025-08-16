@@ -412,6 +412,11 @@ async def cmd_99(message: Message):
 async def cmd_100(message: Message):
     await message.reply("The Great Mouse Detective")
 
-if __name__ == "__main__":
-    asyncio.run(dp.start_polling(bot))
+async def main():
+    await dp.start_polling(bot)
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
+
 
